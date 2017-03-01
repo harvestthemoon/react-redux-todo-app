@@ -8,9 +8,9 @@ export default class TodoSearch extends React.Component {
 	}
 
 	handleSearch() {
-		const showCompleted = this.refs.showCompleted.value;
+		const showCompleted = this.refs.showCompleted.checked;
 		const searchText = this.refs.searchText.value;
-
+		
 		this.props.onSearch(showCompleted, searchText);
 	}
 
