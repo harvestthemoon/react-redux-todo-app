@@ -18,7 +18,7 @@ describe('AddTodo', () => {
 		const todoText = 'Check the mail';
 
 		addTodo.refs.todoText.value = todoText;
-		TestUtils.Simulate.submit($el[0]);
+		TestUtils.Simulate.submit($el.find('form')[0]);
 
 		expect(spy).toHaveBeenCalledWith(todoText);
 	});

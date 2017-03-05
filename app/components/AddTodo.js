@@ -21,10 +21,12 @@ export default class AddTodo extends React.Component {
 
 	render() {
 		return (
-			<form className="add-todo" onSubmit={this.handleSubmit}>
-				<input type="text" ref="todoText" placeholder="What do you need to do?" />
-				<button className="button expanded">Add Todo</button>
-			</form>
+			<div className="add-todo container__footer">
+				<form onSubmit={this.handleSubmit}>
+					<input type="text" ref="todoText" placeholder="What do you need to do?" />
+					<button className="button expanded">Add Todo</button>
+				</form>
+			</div>
 		);
 	}
 }
